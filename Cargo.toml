@@ -1,0 +1,34 @@
+[package]
+name = "ipse-client"
+version = "0.1.0"
+authors = ["Lawliet-Chan"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+ipfs-api = "0.7.2"
+rocket = "0.4.5"
+clap = "3.0.0-beta.1"
+serde = { version = "1.0", features = ["derive"] }
+serde_yaml = "0.8"
+async-std = "1.2.0"
+substrate-subxt = "0.10.0"
+triehash = "0.8.3"
+keccak-hasher = "0.15.2"
+rusqlite = { version = "0.21.0", features = ["bundled"] }
+http = "0.2.1"
+futures = "0.3"
+once_cell = "1.4.0"
+log = "0.4.0"
+reqwest = "0.10.1"
+anyhow = "1.0"
+
+sp-keyring = { version = "2.0.0-rc4", package = "sp-keyring" }
+frame-support = { version = "2.0.0-rc4", package = "frame-support" }
+frame-system = { version = "2.0.0-rc4", package = "frame-system" }
+pallet-indices = { version = "2.0.0-rc4", package = "pallet-indices" }
+sp-core = { version = "2.0.0-rc4", package = "sp-core" }
+sp-runtime = { version = "2.0.0-rc4", package = "sp-runtime" }
+sub-runtime = { path = "../ipse-core/bin/node/runtime", version = "2.0.0-rc4", package = "node-runtime"}
+codec = { package = "parity-scale-codec", version = "1.3.0", default-features = false, features = ["derive", "full"] }
